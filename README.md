@@ -31,7 +31,7 @@ properties.py
 3. Make sure port mentioned in app script[aws-autoscaling-with-f5-app.py] is accessible from AWS region from where sns http notification will come
 4. Put proper values in properties.py
 5. Run script aws-sns-http-subscriptionconfirmation.py to acknowledge subscription.
-6. Now setup sns with http endpoint. Use above public IP. It will be like http://<publicIP>/scale
+6. Now setup sns with http endpoint. Use above public IP. It will be like *`http://publicIP/scale`*
 7. Once subscription is confirmed, it will look like ![alt text](subscription.jpg?raw=true "this") in aws console.
 8. Stop aws-sns-http-subscriptionconfirmation.py now.
 9. Run aws-autoscaling-with-f5-app.py. If you want to run app in different port, please modify this script accordingly.
@@ -48,10 +48,10 @@ properties.py
 
 ## Tests
 
-- Sequence of auto scalled nodes in AWS will look like ![alt text](https://github.com/kmaiti/AWSAutoScalingWithF5andCloudFormation/3.jpg)
+- Sequence of auto scalled nodes in AWS will look like ![alt text](3.jpg?raw=true)
 - If you run application in debug mode, output will look whatever is mentioned in file `app-output-in-debug-mode.txt`
-- While node will be added in F5 will, it will look like ![alt text](https://github.com/kmaiti/AWSAutoScalingWithF5andCloudFormation/node-added-in-f5.jpg "this")
-- While two nodes are added, F5 console looks ![alt text](https://github.com/kmaiti/AWSAutoScalingWithF5andCloudFormation/two-nodes-added-in-f5-pool.jpg "this")
+- While node will be added in F5 will, it will look like ![alt text](node-added-in-f5.jpg?raw=true "this")
+- While two nodes are added, F5 console looks ![alt text](two-nodes-added-in-f5-pool.jpg?raw=true "this")
 
 
 ## Contributors
