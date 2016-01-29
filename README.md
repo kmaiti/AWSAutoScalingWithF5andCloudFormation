@@ -32,7 +32,7 @@ properties.py
 4. Put proper values in properties.py
 5. Run script aws-sns-http-subscriptionconfirmation.py to acknowledge subscription.
 6. Now setup sns with http endpoint. Use above public IP. It will be like http://<publicIP>/scale
-7. Once subscription is confirmed, it will look like ![alt text](https://github.com/kmaiti/AWSAutoScalingWithF5andCloudFormation/subscription.jpg "this") in aws console.
+7. Once subscription is confirmed, it will look like ![alt text](subscription.jpg?raw=true "this") in aws console.
 8. Stop aws-sns-http-subscriptionconfirmation.py now.
 9. Run aws-autoscaling-with-f5-app.py. If you want to run app in different port, please modify this script accordingly.
 10. Put script aws-autoscale-ec2-instance-modify.py in AMI and change AMI ID in CF script. Python should be pre-installed in AMI. Note down the path of script.
