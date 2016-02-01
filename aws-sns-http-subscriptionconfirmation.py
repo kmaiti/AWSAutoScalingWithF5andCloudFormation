@@ -1,4 +1,3 @@
-```python
 #!/usr/bin/env python
 """
 Purpose: Script will be used to confirm aws sns http subscription. This works as webserver using python Flask framework
@@ -83,4 +82,3 @@ if __name__ == "__main__":
 
     #Run actual application
     app.run(host="0.0.0.0",debug=True,port=5000)    
-```
