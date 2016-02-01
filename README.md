@@ -1,11 +1,11 @@
-## Synopsis
+## AWS Autoscalling with BiG IP F5, Cloudformation, SNS, Dynamic Server name & Puppet
 
 - This project includes complete integration of **AWS Auto Scaling with Big IP F5 through CloudFormation and SNS**. 
 - While Autoscale is used with ELB of AWS, it works fine but due to limitation of ELB, Big IP F5 service is used now a days as a replacement. It is a big challenge to modify load balancer pool using autoscaling instance IP. This project overcomes this.
 - SNS http endpoint notification goes to python based app server and it processes IP and instance ID. Then it addes/deletes IP in/from desired LOAD BALANCER POOL.
 - aws-autoscale-ec2-instance-modify.py script is responsible to make sure to increase sequence number of node. It sets TAG and hostname accordingly. 
 
-## Code Example
+## Code 
 - View all scripts and get idea. Most of them has notes to understand them.
 
 ## Motivation
